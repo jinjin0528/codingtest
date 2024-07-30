@@ -1,10 +1,13 @@
 package section01;
 
 public class Practice1 {
-        public int solution(int num1, int num2) {
+    public int solution ( int n){
             int answer = 0;
-            answer = num1 * num2;
+            for (int i = 0; i <= n; i++) {
+                if (i % 2 == 0) {
+                    answer += i;
+                }
+            }
             return answer;
         }
     }
-
