@@ -1,11 +1,13 @@
 package section01;
-
+// 중복된 수 개수 세기
 public class Practice2 {
-        public int solution(int num1, int num2) {
-            num1 = 20;
-            num2 = 10;
-            int answer = num1 - num2;
-            return answer;
+    public int solution(int[] array, int n) {
+        int answer = 0;
+        for(int i = 0;i<array.length;i++){
+            if(array[i] == n){
+                answer++;
+            }
         }
+        return answer;
     }
-
+}
