@@ -1,12 +1,12 @@
+package section01;
+// 배열 원소 두배로 만들기
 public class Practice5 {
-    public double solution(int[] numbers) {
-        if (numbers.length == 0){
-            return 0;
+    public int[] solution(int[] numbers) {
+        int[] answer = new int[numbers.length];
+
+        for (int i = 0; i < numbers.length; i++) {
+            answer[i] = numbers[i] * 2;
         }
-        double answer = 0;
-        for(int i =0; i<numbers.length;i++) {
-            answer += numbers[i];
-        }
-        return answer/numbers.length;
+        return answer;
     }
 }
